@@ -1,5 +1,4 @@
 #![allow(unused_variables)]
-use anyhow::Result;
 use serde_derive::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
@@ -11,7 +10,7 @@ struct MyData {
     some_data: std::collections::HashMap<String, usize>,
 }
 
-fn main() -> Result<()> {
+fn main() -> anyhow::Result<()> {
     let my_data_yaml = r#"
         fieldOne: 7
         fieldTwo: "lorem"
