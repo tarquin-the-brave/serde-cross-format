@@ -1,0 +1,16 @@
+[package]
+name = "serde-cross-format"
+version = "0.1.0"
+authors = ["tarquin-the-brave <tomsteavenson@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_derive = "1.0.105"
+serde = "1.0.105"
+serde_yaml = "0.8.11"
+serde_json = "1.0.48"
+toml = "0.5.6"
+anyhow = "1.0.27"
+schemars = "0.7.0"
